@@ -112,8 +112,6 @@ public class Engine
       int nextX = (int) (currentX) + (int) (stepX / Math.abs(stepX));
       int nextY = (int) (currentY) + (int) (stepY / Math.abs(stepY));
       int nextZ = (int) (currentZ) + (int) (stepZ / Math.abs(stepZ));
-      if (yawAngle == 0.0f)
-        System.out.println(nextZ);
       float coeffX, coeffY, coeffZ;
       if (stepX != 0 && nextX != currentX)
         coeffX = (float) (nextX - currentX) / stepX;
